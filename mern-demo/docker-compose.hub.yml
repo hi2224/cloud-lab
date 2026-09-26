@@ -3,6 +3,8 @@ services:
     image: vohoangkhang234923/mern-backend:1.0
     ports:
       - "5000:5000"
+    dns:
+      - 8.8.8.8
     env_file:
       - ./server/.env
     environment:
@@ -11,9 +13,11 @@ services:
       - mern-network
 
   frontend:
-    image: vohoangkhang234923/mern-frontend:1.0
+    image: vohoangkhang234923/mern-frontend:2.0
     ports:
       - "3000:80"
+    dns:
+      - 8.8.8.8
     depends_on:
       - backend
     networks:

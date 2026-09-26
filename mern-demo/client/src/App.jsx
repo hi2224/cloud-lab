@@ -82,7 +82,7 @@ function App() {
   return (
     <main className="app-shell">
       <nav className="topbar"><div className="brand"><span className="brand-icon">✦</span><span>STUDENT<span>HUB</span></span></div><div className="profile"><span className="profile-avatar">Q</span><span>Quản trị viên</span><span className="profile-dot" /></div></nav>
-      <header className="page-header"><div><p className="eyebrow">QUẢN LÝ ĐÀO TẠO / TỔNG QUAN</p><h1>Danh sách sinh viên</h1><p className="subtitle">Một không gian gọn gàng để quản lý thông tin lớp học.</p></div><div className="header-date"><span className="live-dot" /> Dữ liệu đang cập nhật</div></header>
+      <header className="page-header"><div><p className="eyebrow">QUẢN LÝ ĐÀO TẠO / TỔNG QUAN</p><h1>Danh sách sinh viên - Phiên bản 2.0</h1><p className="subtitle">Một không gian gọn gàng để quản lý thông tin lớp học.</p></div><div className="header-date"><span className="live-dot" /> Dữ liệu đang cập nhật</div></header>
       <section className="stats-grid"><div className="stat-card stat-primary"><span className="stat-label">TỔNG SINH VIÊN</span><strong>{students.length}</strong><span className="stat-note">Hồ sơ trong hệ thống</span></div><div className="stat-card"><span className="stat-label">TRẠNG THÁI</span><strong className="status-value">Đang hoạt động</strong><span className="stat-note"><span className="live-dot" /> Kết nối ổn định</span></div><div className="stat-card"><span className="stat-label">CẬP NHẬT</span><strong className="status-value">Hôm nay</strong><span className="stat-note">Danh sách mới nhất</span></div></section>
       <section className="content-grid">
         <form className="student-form" onSubmit={handleSubmit}>

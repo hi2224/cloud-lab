@@ -4,6 +4,8 @@ services:
       context: ./server
     ports:
       - "5000:5000"
+    dns:
+      - 8.8.8.8
     env_file:
       - ./server/.env
     networks:
@@ -14,6 +16,8 @@ services:
       context: ./client
     ports:
       - "3000:80"
+    dns:
+      - 8.8.8.8
     depends_on:
       - backend
     networks:
